@@ -1,18 +1,21 @@
-# lighthouse-role
-它用于配置运行SystemD的操作系统以使用VK Lighthouse
+#lighthouse
+安装灯塔
 
-lighthouse_path变量
--存储Lighthouse静态文件的路径
+要求
+发行版7
 
-clickhouse_host:-用于查看指标的Clickhouse主机。
+角色变量
+lighthouse_vcs：https://github.com/VKCOM/lighthouse.git
 
-clickhosue_port：-用于查看指标的Clickhouse端口。
+lighthouse_location_dir：/home/lsd/ligthouse
 
-clickhosue_user：-Clickhouse用户查看指标。
+lighthouse_access_log_name：lighthouse_access
 
-clickhosue_password：-授权Clickhouse用户的密码。
+依赖关系
+无
 
-使用示例
+示例剧本
+包含一个如何使用角色的示例（例如，将变量作为参数传递）对用户来说也是很好的:
 
 - name: Install and configure Lighthouse
   hosts: lighthouse
