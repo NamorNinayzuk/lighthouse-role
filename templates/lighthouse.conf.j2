@@ -1,13 +1,10 @@
-server
-{
-    listen       {{ lighthouse_port }};
-    listen       [::]:{{ lighthouse_port }};
-    server_name  Lighthouse;
-    root         {{ lighthouse_path }};
+server {
+    listen      80;
+    server_name localhost;
 
-    error_page 404 /404.html;
-    location = /404.html { }
+    access_log   /var/log/nginx/{{ lighthouse_access_log_name }}.log  main;
 
-    error_page 500 502 503 504 /50x.html;
-    location = /50x.html { }
-}
+    location / {
+      root    {{ lighthouse_location_dir }};
+      index index.html;
+    }
