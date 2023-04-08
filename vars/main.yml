@@ -1,4 +1,5 @@
 ---
-lighthouse_repo: "https://github.com/VKCOM/lighthouse.git"
-lighthouse_branch: "master"
+# vars file for lighthouse-role
+#lighthouse_repo: "https://github.com/VKCOM/lighthouse.git"
+#lighthouse_branch: "master"
 ...
