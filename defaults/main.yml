@@ -1,5 +1,13 @@
+#---
+## defaults file for lighthouse-role
+#lighthouse_vcs: https://github.com/VKCOM/lighthouse.git
+#lighthouse_location_dir: /home/lsd/ligthouse
+#lighthouse_access_log_name: lighthouse_access
 ---
-# defaults file for lighthouse-role
-lighthouse_vcs: https://github.com/VKCOM/lighthouse.git
-lighthouse_location_dir: /home/lsd/ligthouse
-lighthouse_access_log_name: lighthouse_access
+lighthouse_path: "/usr/share/nginx/lighthouse"
+lighthouse_port: "8008"
+clickhouse_host: "127.0.0.1"
+clickhouse_port: "8123"
+clickhouse_user: "default"
+clickhouse_password: ""
+...
